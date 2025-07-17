@@ -5,8 +5,8 @@
 ※ 動画はGIFに変換済みであり以下はイメージです
 <table>
   <tr>
-    <td><img src="./exsample/exsample.gif" width="300"></td>
-    <td><img src="./exsample/exsample.png" width="300"></td>
+    <td><img src="https://raw.githubusercontent.com/miya8872/django_convert_mp4-png/refs/heads/master/example/example.gif" width="300"></td>
+    <td><img src="https://raw.githubusercontent.com/miya8872/django_convert_mp4-png/refs/heads/master/example/example.png" width="300"></td>
   </tr>
 </table>
 
