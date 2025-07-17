@@ -1,0 +1,17 @@
+{% extends "base/base.html" %}
+{% block body %}
+{% load static %}
+<script src="{% static 'after/js/index.js' %}"></script>
+
+<a href="{% url 'after:login' %}">生成中/生成済みの方はこちら</a>
+<p>{{ datetime_now }}</p>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">処理開始</button>
+</form>
+
+<p id=index_info>動画のフレーム間で動いている物体を切り出して、以下の様な画像に変換します。</p>
+<div id="img_container"></div>
+
+{% endblock %}

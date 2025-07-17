@@ -1,0 +1,18 @@
+{% extends "base/base.html" %}
+{% block body %}
+
+{% load static %}
+<script>
+  const object_id = "{{ objects.id }}";
+  const object_value = "{{ objects.value }}"
+  let progressing = true;
+</script>
+<script src="{% static 'after/js/result.js' %}"></script>
+
+<h2 id=login_id style="display: inline-block;">ID：{{ objects.id }}</h2>
+<button onclick="copyId()">コピー</button>
+
+<div id="progress"></div>
+<div id="img_container"></div>
+
+{% endblock %}

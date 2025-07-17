@@ -1,0 +1,26 @@
+# Pythonのキャッシュ類
+__pycache__/
+*.py[cod]
+*.so
+
+# Djangoの一時ファイル
+*.log
+*.pyc
+*.pot
+*.mo
+*.sqlite3
+db.sqlite3
+/media/after/img/
+/media/after/video/
+!/media/after/src/
+
+# collectstaticで生成されるファイル
+/staticfiles/
+
+# 環境変数などの秘匿情報
+.env
+.env.*
+
+# OS依存ファイル
+.DS_Store
+Thumbs.db

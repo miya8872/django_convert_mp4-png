@@ -1,0 +1,19 @@
+{% extends "base/base.html" %}
+{% block body %}
+
+<p>IDとPINを入力してください</p>
+
+<form method="POST">
+    <div>
+        <label for="id">ID</label>
+        <input type="text" id="id" name="id">
+    </div>
+    <div>
+        <label for="pin">PIN</label>
+        <input type="number" id="pin" name="pin">
+    </div>
+    {% csrf_token %}
+    <button type="submit">送信</button>
+</form>
+
+{% endblock %}

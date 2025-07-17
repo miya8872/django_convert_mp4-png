@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>mp4->png</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'after/css/base.css' %}">
+        <script src="{% static 'after/js/base.js' %}"></script>
+        {% block extra_css %}{% endblock %}
+    </head>
+
+    <script>
+        const urls = {
+            progress: "{% url 'after:progress' %}",
+            img: "{% url 'after:img' %}",
+        };
+    </script>
+
+    <body>
+        <header class="base_header">
+            <div>
+                <h1 class="base_title"><a href="{% url 'after:index' %}">動画 -> 画像</a></h1>
+            </div>
+            <div>
+                <button class="base_menu" onclick="menu()">☰ メニュー</button>
+                <nav id="base_dropdown" class="base_dropdown base_hidden">
+                    <button onclick="menu()">閉じる</button>
+                    <a href="{% url 'after:index' %}">ホーム</a>
+                    <a href="{% url 'after:login' %}">結果画面</a>
+                    <a href="{% url 'after:git_link' %}">GitHubLinks</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="base_body">
+            {% block body %}
+            {% endblock %}
+        </main>
+    </body>
+
+</html>
