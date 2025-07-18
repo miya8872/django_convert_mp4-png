@@ -6,8 +6,12 @@ URL: https://convert-mp4-to-png.duckdns.org/
 ※ 動画はGIFに変換済みであり以下はイメージです
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/miya8872/django_convert_mp4-png/refs/heads/master/example/example.gif" width="45%"></td>
-    <td><img src="https://raw.githubusercontent.com/miya8872/django_convert_mp4-png/refs/heads/master/example/example.png" width="45%"></td>
+    <td width="45%">
+      <img src="https://raw.githubusercontent.com/miya8872/django_convert_mp4-png/refs/heads/master/example/example.gif">
+    </td>
+    <td width="45%">
+      <img src="https://raw.githubusercontent.com/miya8872/django_convert_mp4-png/refs/heads/master/example/example.png">
+    </td>
   </tr>
 </table>
 
