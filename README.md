@@ -1,12 +1,13 @@
 # 動画->画像変換Webアプリ
 動画をWebサイトから受け取り、フレーム差違を抽出した上で、それら差異を順に重ねた画像を出力します。
+URL: https://convert-mp4-to-png.duckdns.org/
 
 例：動画 -> 画像  
 ※ 動画はGIFに変換済みであり以下はイメージです
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/miya8872/django_convert_mp4-png/refs/heads/master/example/example.gif" width="300"></td>
-    <td><img src="https://raw.githubusercontent.com/miya8872/django_convert_mp4-png/refs/heads/master/example/example.png" width="300"></td>
+    <td><img src="https://raw.githubusercontent.com/miya8872/django_convert_mp4-png/refs/heads/master/example/example.gif" width="45%"></td>
+    <td><img src="https://raw.githubusercontent.com/miya8872/django_convert_mp4-png/refs/heads/master/example/example.png" width="45%"></td>
   </tr>
 </table>
 
@@ -27,7 +28,8 @@ AWSやWebサイトのバックエンド処理の学習目的で作成いたし�
 ・apscheduler.schedulers.background を用いた定期的な関数の実行  
 ・AWS EC2 を用いたインスタンスの作成及び使用  
 ・Gunicorn を用いたWSGIサーバーの作成及び使用  
-・Nginx を用いた静的ファイルの配信やHttps対応、入力ファイルのサイズ制限(25MB)
+・Nginx を用いた静的ファイルの配信やHttps対応、入力ファイルのサイズ制限(25MB)  
+・Let's Encrypt を用いたSSL証明書の取得
 
 ## 設計上の工夫点
 ・最低限Webアプリケーションとして、継続して機能することを意識して作成しました  
